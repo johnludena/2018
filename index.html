@@ -1,0 +1,448 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Developer, Front-End Development, Houston, TX - John Ludena</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!-- FontAwesome for random icons needed -->
+    <script src="https://use.fontawesome.com/a7ab802f5c.js"></script>
+    
+    <!-- Foundation CSS for responsive grid and other basic styles -->
+    <link rel="stylesheet" href="css/foundation.css">
+
+    <!-- Animate.CSS for icon and image CSS animations (used with WOW.js below) -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Portfolio styles -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <!-- setting up off-canvas slide-out form -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner portfolio-wrapper" data-off-canvas-wrapper>
+        <div class="hidden-form off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+
+          <!-- Close button -->
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+
+          <div class="form-wrapper">
+          
+            <h3>Get in touch with me now</h3>
+
+            <p>You’ve arrived at my super secret contact form! If you’d rather email me directly, my address is <a href="mailto:johnludena@gmail.com">johnludena@gmail.com</a>.</p>
+            
+              <form id="ajax-form" action="https://formspree.io/johnludena@gmail.com"
+        method="POST" data-abide novalidate>
+                <!-- <div data-abide-error class="alert callout" style="display: none;">
+                  <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                </div> -->
+                <div class="row">
+                    <label>Full Name:
+                      <input name="name" type="text" required />
+                      <span class="form-error">
+                        Don't be shy. Go ahead and tell me your name :)
+                      </span>
+                    </label>
+                    
+                    <label>Phone Number:
+                      <input name="phone" type="text" required />
+                      <span class="form-error">
+                        I promise not to call you at 3am, ok?
+                      </span>
+                    </label>
+                    
+                    <label>Email:
+                      <input type="text" name="email" type="text" required />
+                      <span class="form-error">
+                        Your email address is safe with me. Promise!
+                      </span>
+                    </label>
+                    <label>Your message:
+                      <textarea name="message" type="text" rows="4" required></textarea>
+                      <span class="form-error">
+                        Your lovely message. It doesn't have to be a long one. Just let me know the main reason you are getting in touch today.
+                      </span>
+                    </label>
+                    <!-- <input type="hidden" name="_next" value="/thanks.html" /> -->
+                    
+                </div>
+                
+                <button class="button" type="submit" value="Submit">Submit</button>
+               
+              </form>
+            </div> <!-- end of form wrapper -->
+
+            <div class="success-message">
+
+              <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="70">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="23" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                   
+              </svg>
+
+              <div class="message">
+                <h3>Success!</h3>
+                <p>Expect to hear back from me within 24 hours. Thanks!</p>
+              </div>
+
+            </div>
+
+        </div><!-- end of hidden sidebar -->
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          
+          <!-- hero banner section -->
+          <section id="hero">
+            <div class="row">
+              <div class="large-5 columns">
+                <img class="logo wow slideInLeft centered-on-small" src="images/logo.png" alt="John Ludena" />
+                <h1 class="title-headline wow slideInLeft centered-on-small">Creative <br/>Front-End Developer for a Better WWW.</h1>
+                <button type="button" class="button wow slideInLeft centered-on-small" data-toggle="offCanvas">Contact me</button>
+              </div>
+              <div class="large-7 columns">
+                <div class="brain-wrapper">
+                    <img id="icon-css3" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-css3.png" width="70"/>
+                   
+                    <img id="icon-html5" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-html5.png" width="70"/>
+                    
+                    <img id="icon-sass" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-sass.png" width="70"/>
+                   
+                    <img id="icon-ps" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-ps.png" width="65"/>
+                    
+                    <img id="icon-mongodb" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-mongodb.png" width="70"/>
+                    
+                    <img id="icon-nodejs" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-nodejs.png" width="70"/>
+                   
+                    <img id="icon-react" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-react.png" width="70"/>
+                    
+                    <img id="icon-js" class="brain-icon grow wow bounceIn" data-wow-delay="1s" src="images/icon-js.png" width="70"/>
+                   
+                    <img class="wow fadeIn center" src="images/brain.jpg" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- yours truly section -->
+          <section id="about">
+            <h2 class="text-center">A little about yours truly</h2>
+            
+            <div class="row">
+              <div class="large-4 columns">
+                <img class="gravatar center wow fadeIn" src="https://www.gravatar.com/avatar/ac9c09f9d6d3591c0ad7fbdc25ad8d26?s=200" />
+                <div id="random-fact-container">
+                  <div class="fact-bubble hidden arrow_box"></div>
+                </div>
+                <p class="caption text-center">Click on my happy face to learn a random fact about me.<br />
+                TMI may be involved. You’ve been warned.</p>
+              </div>
+
+              <div class="large-8 columns">
+            
+                <p>Hi there, I'm John.</p>
+
+                <p><strong>I’m a designer and front-end developer with over 8 years of professional experience</strong> building websites and web applications for a wide range of companies; from small startups to massive Fortune 500 corporations.</p>
+                
+                <p>I’m currently looking for new and exciting opportunities where I can help build highly-polished user-interfaces using my unique talent of being an experienced front-end developer with a keen eye for great UI design.</p>
+
+                <p>Interested in finding how I can help you build <em>your</em> perfect UI vision? <a href="#" data-toggle="offCanvas">Let's have a friendly chat.</a> I can guarantee you will not regret it.</p>
+
+
+              </div>
+            </div>
+          </section>
+
+          <!-- skills section -->
+          <section id="skills">
+
+            <h2 class="text-center" style="padding-bottom: 0">My bread and butter skills</h2>
+            <p class="text-center">(Looking for a PDF resume? <a target="_blank" href="docs/John-Ludena-resume-2018.pdf">Download one here.</a>)</p>
+
+            <div class="row skill-row">
+              <div class="large-6 columns dev-skill">
+                <div class="row">
+                  <div class="small-12 medium-3 columns">
+                      <img src="images/icon-front-end.png"/>
+                  </div>
+                
+                  <div class="small-12 medium-9 columns">
+                     <h3>Front-end Development</h3>
+                      <p>This is where I get to transform image mockups into pixel-perfect user interfaces with the power of HTML, CSS &amp; Javascript.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="large-6 columns dev-skill">
+                <div class="row">
+                  <div class="small-12 medium-3 columns">
+                      <img src="images/icon-responsive.png" />
+                  </div>
+                
+                  <div class="small-12 medium-9 columns">
+                     <h3>Responsive Design</h3>
+                      <p>I'm a veteran of responsive design and making the best possible user experience on any and all screen sizes.</p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+             <div class="row skill-row">
+              <div class="large-6 columns dev-skill">
+                <div class="row">
+                  <div class="small-12 medium-3 columns">
+                      <img src="images/icon-ecommerce.png" />
+                  </div>
+                
+                  <div class="small-12 medium-9 columns">
+                     <h3>Ecommerce &<br /> Online Payments</h3>
+                      <p>I have a strong ecommerce background and have worked with a variety of different shopping cart platforms and payment APIs like Shopify, Bigcommerce, WooCommerce, Stripe, and others.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="large-6 columns dev-skill">
+                <div class="row">
+                  <div class="small-12 medium-3 columns">
+                      <img src="images/icon-wordpress.png" />
+                  </div>
+                
+                  <div class="small-12 medium-9 columns">
+                     <h3>Wordpress Development</h3>
+                      <p>Tinkering with Wordpress is how I first got my start in the world of web development. I still use Wordpress today for certain projects where clients need a popular and extensible platform to quickly start a new presence online.</p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </section> 
+
+          <!-- works section -->
+          <section id="work">
+
+            <h2 class="text-center">Project Samples</h2>
+
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="data-auto-play: false, data-pause-on-hover: true">
+              <ul class="orbit-container">
+                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="images/app-demo-pizzabot.jpg" />
+                    
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>PizzaBot</h3>
+                      <h4>Chatbot interface powered by Artificial Intelligence</h4>
+                      <p>A personal project to learn more about the world of A.I. and challenge myself to code a highly-polished user-interface with transitions and animations using the latest ES6 version of React.</p>
+                      <ul>
+                        <li>Chatbot interface built from the ground up without the use of CSS frameworks or additional libraries other than pure React.js</li>
+                        <li>Integration with DialogFlow's API; Google's own Artificial Intelligence platform (formerly api.ai)</li>
+                        <li>Fully responsive for the best experience on both web and mobile browsers</li>
+                        <li>Use of React's latest ES6 version</li>
+                        <li>Deployed to Netlify for maximum performance</li>
+                      </ul>
+
+                      <p class="build-summary"><strong>Tech build summary:</strong> HTML5, CSS3, React.js, DialogFlow API, Netlify</p>
+
+                       <a class="button small" href="https://pizzabotdemo.netlify.com" target="_blank">View live demo</a>
+                       <a class="button hollow small" href="https://github.com/johnludena/pizzabot" target="_blank">View source code</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="images/app-demo-j4d.jpg" />
+                    
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>Javascript for Designers</h3>
+                      <h4>Blog for teaching designers who want to learn Javascript for UI/UX development.</h4>
+                      <p>A small passion project where I share everything I learned in my journey of going from visual designer to front-end developer and how others can do the same and help their own teams cross that tricky bridge between design and development.</p>
+                      <ul>
+                        <li>Original articles and tutorials written by yours truly</li>
+                        <li><a href="https://codepen.io/johnludena/" target="_blank">CodePen interactive demos</a> to show others how a lesson is implemented in a real-world, practical situation</li>
+                        <li>YouTube video tutorials (coming very soon!)</li>
+                      </ul>
+
+                      <p class="build-summary"><strong>Tech build summary:</strong> HTML5, CSS3, Jekyll, Github Pages, CodePen, Mailchimp</p>
+
+                       <a class="button small" href="http://www.javascriptfordesigners.io" target="_blank">View live demo</a>
+                       <a class="button hollow small" href="https://github.com/johnludena/johnludena.github.io" target="_blank">View source code</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="images/app-demo-drumpfsy.jpg" />
+
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>Drumpfsy</h3>
+                      <h4>An Trump-themed Etsy shop.</h4>
+                      <p>An ecommerce "shell" that uses the Etsy API to show hand-made goods inspired by the current <strike>Republican Presidential candidate</strike> President of the United States: Mr. Donald J. Trump. </p>
+
+                      <ul>
+                        <li>React.js for building the site's user interface</li>
+                        <li>Backbone.js used for creating home/single-page routes and and creating data models</li>
+                        <li>Fetching Etsy API data for displaying humorous current markeplace items related to our dear President</li>
+                      </ul>
+
+                      <p class="build-summary"><strong>Tech build summary:</strong> HTML5, Sass, React.js, Backbone.js, Etsy API, Heroku</p>
+                      <a class="button small" href="http://drumpfsy.herokuapp.com/#home" target="_blank">View live demo</a>
+                      <a class="button hollow small" href="https://github.com/johnludena/drumpfsy" target="_blank">View source code</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <img src="images/app-demo-blueleaf.jpg" />
+
+                    </div>
+
+                    <div class="large-6 columns">
+                      <h3>Blue Leaf</h3>
+                      <h4>Ecommerce website with gift registry software integration.</h4>
+                      <p>Blue Leaf is a trendy lifestyle store in the heart of Houston. After being in business for a few years, they decided to jump into the ecommerce space and start selling their goods online.</p>
+
+                      <ul>
+                        <li>UPS & USPS shipping carrier integration for live-pricing quotes</li>
+                        <li>Integration with Registry Valet, a third party registry software</li>
+                        <li>Use of the Wordpress CMS for easy product catalog maintenance, page updates, and customer order management</li>
+                        <li>Training different members of the Blue Leaf sales team to use the new website and manage & ship customer orders</li>
+                        <li>Mobile-responsiveness for optimal user experience</li>
+                      </ul>
+
+                      <p class="build-summary"><strong>Tech build summary:</strong> HTML5, CSS3, Wordpress, WooCommerce, Registry Valet integration with custom PHP coding.</p>
+
+                      <a class="button small" href="http://www.blueleafhouston.com" target="_blank">View live demo</a>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+             
+            </div>            
+
+          </section>
+
+          <!-- testimonials section -->
+          <section id="testimonials">
+            <h2 class="text-center">Some kind words from some amazing people...</h2>
+            <div class="row">
+              <div class="large-10 large-centered columns">
+
+                <!-- start of Foundation Orbit -->
+                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="data-auto-play: false, data-pause-on-hover: true">
+                  <ul class="orbit-container">
+                    
+                    <li class="is-active orbit-slide">
+                      <blockquote>"John produces great results no matter how big the project or how tight the schedule. He stays up-to-date with the latest developments in technology and makes excellent suggestions to improve the performance and functionality of websites. I highly recommend him for your next project.”.<cite>Rick Naylor, Marketing Director at PreCash</cite></blockquote>
+
+                    </li>
+                    <li class="orbit-slide">
+                      <blockquote>"Working with John is not only very easy and effective, but also a pleasure! He is very skilled and keeps educating himself to learn new things he later applies to your projects. He is reliable, hard working, very fairly priced, and someone you can completely trust – especially when dealing with delicate information.”.<cite>Renzo Bolivar, Account Manager at Lopez Negrete Communications</cite></blockquote>
+                    </li>
+                    <li class="orbit-slide">
+                      <blockquote>"John not only has excellent design skills but is extremely knowledgeable at digital production and solving web issues. John adds talent and value to any project.”<cite>Wes Weaver, Owner of W-Squared Marketing</cite></blockquote>
+                    </li>
+                    <li class="orbit-slide">
+                      <blockquote>"John is flexible and easy to work with.  He listens and then focuses on solving your website challenge with a solution that works and is aesthetically pleasing.  He is a great member of the team.”<cite>Nick Pantazis, President of WilsherCo, Inc.</cite></blockquote>
+                    </li>
+                  </ul>
+                  <nav class="orbit-bullets">
+                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                  </nav>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- medium section -->
+          <section id="medium">
+            <h2 class="text-center">Featured Medium Article</h2>
+            <h3 class="text-center">Javascript for Designers 101: The DOM (An Illustrated Guide)</h3>
+            <p class="date text-center">Published on Jan 13th, 2018</p>
+            <div class="row">
+              <div class="large-8 large-centered columns">
+                <img src="images/DOM-tree.jpg" />
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="large-8 large-centered columns">
+                <p>Learn all about the mythical DOM: What the heck it is, and why it's so important when you are getting started in your Javascript journey as a designer.</p>
+                <a class="button hollow small centered" href="https://medium.com/@johnludena/javascript-for-designers-101-the-dom-an-illustrated-guide-9c3d60a7fe3" target="_blank">Read this post on Medium.com</a>
+            </div>
+          </section>
+
+          <!-- bottom page call-to-action -->
+          <section id="bottom-cta">
+            <h2 class="text-center">Ready to build something special together?</h2>
+            <div class="row">
+              
+              <div class="large-12 columns">
+                <p>Hit that button below and let’s start a friendly chat. I promise you won’t regret it.</p>
+                <a href="#" class="button" data-toggle="offCanvas">Get in touch with me</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- footer section -->
+          <section id="footer">
+            <div class="row">
+              
+              <div class="large-12 columns">
+                
+                <div class="footer-icons">
+                  <a class="social-icon" href="https://github.com/johnludena" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                  <a class="social-icon" href="https://www.linkedin.com/in/john-ludena-88a70b13" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                  <a class="social-icon" href="mailto:johnludena@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                  
+                </div>
+
+                <p class="text-center copyright">© 2016 John Ludena. Built from the ground up with <i class="fa fa-heart-o" aria-hidden="true"></i> in Houston, TX. Hosted on <a href="https://github.com/johnludena/johnludena.github.io" target="_blank">GitHub</a>.</p>
+
+              </div>
+            </div>
+          </section>
+
+        </div><!-- end of off-canvas content wrapper -->
+      </div>
+    </div>
+
+        <!-- WOW.js for timed animation triggers -->
+        <script src="js/wow.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

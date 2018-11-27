@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Successfully Submitted!</title>
+
+    <!-- FontAwesome for random icons needed -->
+    <script src="https://use.fontawesome.com/a7ab802f5c.js"></script>
+    
+    <!-- Foundation CSS for responsive grid and other basic styles -->
+    <link rel="stylesheet" href="css/foundation.css">
+
+    <!-- Animate.CSS for icon and image CSS animations (used with WOW.js below) -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- WOW.js for timed animation triggers -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- Portfolio styles -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <!-- setting up off-canvas slide-out form -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner portfolio-wrapper" data-off-canvas-wrapper>
+        <div class="hidden-form off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+
+          <!-- Close button -->
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <div class="form-wrapper">
+            <h3>Get in touch with me now</h3>
+
+            <p>You’ve arrived at my super secret contact form! If you’d rather email me directly, my address is <a href="mailto:johnludena@gmail.com">johnludena@gmail.com</a>.</p>
+
+            <form action="https://formspree.io/johnludena@gmail.com"
+      method="POST" data-abide novalidate>
+              <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
+              </div>
+              <div class="row">
+                  <label>Full Name:
+                    <input name="name" type="text" required />
+                    <span class="form-error">
+                      Yo, you had better fill this out, it's required.
+                    </span>
+                  </label>
+                  
+                  <label>Phone Number:
+                    <input name="phone" type="text" data-abide-ignore />
+                  </label>
+                  
+                  <label>Email:
+                    <input type="text" name="email" required />
+                    <span class="form-error">
+                      I'm required!
+                    </span>
+                  </label>
+                  <label>Your message:
+                    <textarea name="message" type="text" rows="4"></textarea>
+                    <span class="form-error">
+                      Hey, passwords are supposed to match!
+                    </span>
+                  </label>
+                  <input type="hidden" name="_next" value="/thanks.html" />
+                  
+              </div>
+              
+              <button class="button" type="submit" value="Submit">Submit</button>
+             
+            </form>
+
+          </div><!-- end of contact form section wrapper -->
+
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          
+          <!-- hero banner section -->
+          <section id="thank-you">
+            <div class="row">
+              <div class="large-6 large-centered columns">
+
+                <h2>Success!</h2>
+
+                <img class="success-check" src="images/check-mark-icon.png" />
+                <p>Your request has been submitted successfully. Expect to hear back from me in less 1 business day or less. Can't wait to talk to you!</p>
+
+                <p class="centered"><a class="button" href="./index.html">Return to homepage</a></p>
+
+              </div>
+              
+            </div>
+          </section>
+
+        </div><!-- end of off-canvas content wrapper -->
+      </div>
+    </div>
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
